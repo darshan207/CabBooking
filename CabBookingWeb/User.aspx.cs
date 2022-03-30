@@ -11,7 +11,7 @@ namespace CabBookingWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         protected void address_TextChanged(object sender, EventArgs e)
@@ -55,15 +55,11 @@ namespace CabBookingWeb
             user.mobile = mobile.Text;
             user.is_driver = true;
             user.email = email.Text;
-            user.age = Convert.ToInt32(age.Text);
+            //user.age = Convert.ToInt32(age.Text);
             user.gender = "Male";
             bool ans = userClient.AddUser(user);
-            answer.Text = Convert.ToString(ans);
+            //answer.Text = Convert.ToString(ans);
         }
 
-        protected void answer_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
