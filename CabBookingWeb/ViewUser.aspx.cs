@@ -37,7 +37,7 @@ namespace CabBookingWeb
             Session.Remove("uid");
             Response.Redirect("User.aspx");
         }
-        protected void DeletePatient(object sender, EventArgs e)
+        protected void DeleteUser(object sender, EventArgs e)
         {
             CabBookingSystem.UserClient userClient = new CabBookingSystem.UserClient();
             if (userClient.DeleteUser(Convert.ToInt32(Session["uid"])))
@@ -46,7 +46,7 @@ namespace CabBookingWeb
                 Response.Redirect("User.aspx");
             }
         }
-        protected void UpdatePatient(object sender, EventArgs e)
+        protected void UpdateUser(object sender, EventArgs e)
         {
             CabBookingSystem.UserClient userClient = new CabBookingSystem.UserClient();
 
@@ -63,7 +63,7 @@ namespace CabBookingWeb
             };
             if (userClient.UpdateUser(user))
             {
-                Label1.Text = "Patient Updated Successfully!!";
+                Label1.Text = "User Updated Successfully!!";
             }
 
         }

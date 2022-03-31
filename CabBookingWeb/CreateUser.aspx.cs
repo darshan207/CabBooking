@@ -38,7 +38,7 @@ namespace CabBookingWeb
             TextBox7.Text = "";
             if (userClient.AddUser(user))
             {
-                Label1.Text = "Patient Added Successfully!!";
+                Label1.Text = "User Creaated Successfully!!";
             }
         }
 

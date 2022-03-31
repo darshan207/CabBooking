@@ -9,3 +9,15 @@ D:\DHYEY\SOC-Project\CabBookingRide\obj\Debug\CabBookingRide.csproj.AssemblyRefe
 D:\DHYEY\SOC-Project\CabBookingRide\obj\Debug\CabBookingRide.csproj.CoreCompileInputs.cache
 D:\DHYEY\SOC-Project\CabBookingRide\obj\Debug\CabBookingRide.dll
 D:\DHYEY\SOC-Project\CabBookingRide\obj\Debug\CabBookingRide.pdb
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\CabBookingRide.dll.config
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\CabBookingRide.dll
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\CabBookingRide.pdb
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\EntityFramework.dll
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\EntityFramework.xml
+D:\Projects\CabBooking\CabBookingRide\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\CabBooking\CabBookingRide\obj\Debug\CabBookingRide.csproj.AssemblyReference.cache
+D:\Projects\CabBooking\CabBookingRide\obj\Debug\CabBookingRide.csproj.CoreCompileInputs.cache
+D:\Projects\CabBooking\CabBookingRide\obj\Debug\CabBookingRide.csproj.CopyComplete
+D:\Projects\CabBooking\CabBookingRide\obj\Debug\CabBookingRide.dll
+D:\Projects\CabBooking\CabBookingRide\obj\Debug\CabBookingRide.pdb
