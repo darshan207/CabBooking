@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewUser.aspx.cs" Inherits="CabBookingWeb.ViewUser" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewRide.aspx.cs" Inherits="CabBookingWeb.ViewRide" %>
 
 <!DOCTYPE html>
 
@@ -156,61 +156,36 @@
 <body>
     <form id="form1" runat="server" class="box">
         <div>
-            <h1  style="text-align:center;">View User</h1>
+            <h1  style="text-align:center;">View Ride</h1>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">UserId</td>
+                    <td class="auto-style2">RideID</td>
                     <td>
-                        <asp:TextBox ID="TextBox13" runat="server" ReadOnly="True"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Firstname</td>
-                    <td>
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">Lastname</td>
+                    <td class="auto-style3">UserID</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox2" runat="server" ReadOnly="True"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Gender</td>
+                    <td class="auto-style2">DriverID</td>
                     <td>
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox3" runat="server" ReadOnly="True"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Age</td>
+                    <td class="auto-style2">From</td>
                     <td>
                         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">Address</td>
+                    <td class="auto-style2">To</td>
                     <td>
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">Mobile</td>
-                    <td>
-                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">email</td>
-                    <td>
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">isDriver</td>
-                    <td class="auto-style4">
-                        <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="driver" />  
-                        <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="driver" />
                     </td>
                 </tr>
                 
@@ -219,10 +194,10 @@
                         <asp:Button ID="Button1" runat="server"  Text="Back" OnClick="Button1_Click" />
                     </td>
                     <td>
-                        <asp:Button ID="Button2" runat="server" OnClick="UpdateUser"  Text="Update" />
+                        <asp:Button ID="Button2" runat="server" OnClick="UpdateRide"  Text="Update" />
                     </td>
                     <td>
-                        <asp:Button ID="Button3" runat="server" OnClick="DeleteUser"  Text="Delete" />
+                        <asp:Button ID="Button3" runat="server" OnClick="DeleteRide"  Text="Delete" />
                     </td>
                 </tr>
 

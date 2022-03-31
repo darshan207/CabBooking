@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateUser.aspx.cs" Inherits="CabBookingWeb.CreateUser" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateRide.aspx.cs" Inherits="CabBookingWeb.CreateRide" %>
 
 <!DOCTYPE html>
 
@@ -142,59 +142,35 @@
            
         }
     </style>
+
 </head>
 <body>
     <form id="form1" runat="server" class="box">
         <div>
-             <h1  style="text-align:center;"> Create User</h1>
+             <h1  style="text-align:center;"> Create Ride</h1>
             <table class="auto-style1" style="text-align:center;"  align="center">
                 <tr>
-                    <td class="auto-style2" style="text-align:right;">First Name</td>
-                    <td class="auto-style7" style="text-align:left;">
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3" style="text-align:right;">Last Name</td>
+                    <td class="auto-style3" style="text-align:right;">UserID</td>
                     <td class="auto-style4" style="text-align:left;">
                         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2" style="text-align:right;">Gender</td>
+                    <td class="auto-style2" style="text-align:right;">DriverID</td>
                     <td class="auto-style7" style="text-align:left;">
                         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2" style="text-align:right;">Age</td>
+                    <td class="auto-style2" style="text-align:right;">From</td>
                     <td class="auto-style7" style="text-align:left;">
                         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2" style="text-align:right;">Address</td>
+                    <td class="auto-style2" style="text-align:right;">To</td>
                     <td class="auto-style7" style="text-align:left;">
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2" style="text-align:right;">Mobile</td>
-                    <td class="auto-style7" style="text-align:left;">
-                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2" style="text-align:right;">Email</td>
-                    <td class="auto-style7" style="text-align:left;">
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2" style="text-align:right;">Want to register for Driver?</td>
-                    <td class="auto-style7" style="text-align:left;">
-                        <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="driver" />  
-                        <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="driver" />                         
                     </td>
                 </tr>
             </table>

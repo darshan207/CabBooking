@@ -16,21 +16,6 @@ namespace CabBookingWeb
             DataList1.DataSource = userClient.GetUsers();
             DataList1.DataBind();
         }
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            CabBookingSystem.UserClient userClient = new CabBookingSystem.UserClient();
-            CabBookingSystem.User user = new CabBookingSystem.User();
-            //user.first_name = firstname.Text;
-            //user.last_name = lsatname.Text;
-            //user.address = address.Text;
-            //user.mobile = mobile.Text;
-            //user.is_driver = true;
-            //user.email = email.Text;
-            ////user.age = Convert.ToInt32(age.Text);
-            //user.gender = "Male";
-            //bool ans = userClient.AddUser(user);
-            ////answer.Text = Convert.ToString(ans);
-        }
         protected void ViewUser(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -42,6 +27,20 @@ namespace CabBookingWeb
         protected void button2_click(object sender, EventArgs e)
         {
             Response.Redirect("CreateUser.aspx");
+        }
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            CabBookingSystem.UserClient userClient = new CabBookingSystem.UserClient();
+            int uid = int.Parse(TextBox1.Text);
+            if (userClient.FindUser(uid) != null)
+            {
+                Session["uid"] = uid;
+                Response.Redirect("ViewUser.aspx");
+            }
+            else
+            {
+                Label1.Text = "Enter Valid Id!!";
+            }
         }
     }
 }
